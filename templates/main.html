@@ -1,0 +1,38 @@
+
+    
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <meta charset='utf-8'>
+    <title>HTML 기본 구조</title>
+    </head>
+    <body>
+      <h3 id="he">메인 페이지</h3>
+    <p>안녕하세요. 내 사이트에 오신것을 환영 합니다. </p>
+      <h3> <a href='/register'> 가입 양식 </a></h3><br><br>
+      
+      인사말 남기기 
+    <form action='/submit' method="POST">
+    
+      <input name='username' type='text' placeholder='이름'/>
+      <textarea rows='5'  cols='60'  name='content' placeholder='내용을 입력하세요'></textarea><br>
+      <input type='submit'  value='전송' />
+    
+      <button type='button'> 확인</button>
+    </form>
+    
+    <img src={{ url_for('static', filename='img/artemis.jpg') }}>
+    <video width='320' height='240'  autoplay controls loop>
+      <source src={{ url_for('static', filename='video/saraband.mp4') }}>
+    </video>
+    
+    <script>
+      var heading = document.querySelector('he');
+      heading.onclick = function() {
+        heading.style.color = "red";
+      }
+      </script>
+  
+    </body>
+    </html>
+    

@@ -1,0 +1,14 @@
+import sqlite3
+conn = sqlite3.connect('mydb.db')
+
+# Cursor 객체 생성
+c = conn.cursor()
+
+# 데이터 삽입
+c.execute("INSERT INTO student VALUES ('20201234', '파이썬')")
+    
+# execute 에 db 에 적용
+conn.commit()
+
+# 접속한 db 닫기
+conn.close()

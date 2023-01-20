@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+    <meta charset='utf-8'>
+    <title>HTML 기본 구조</title>
+    </head>
+    <body>
+      <h3>Register file  choice</h3>
+    
+    
+    <form action='/get_register' method="POST"></formaction>>
+    파일첨부 : 
+    <input type='file'   type='submit'  value='전송' />
+    
+    <button type='button'  type='submit'> 확인</button>
+    </form>
+    
+    <img src={{ url_for('static', filename='img/artemis.jpg') }}>
+    <video width='320' height='240'  autoplay controls loop>
+      <source src={{ url_for('static', filename='video/saraband.mp4') }}>
+    </video>
+    </body>
+    </html>
